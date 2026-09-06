@@ -20,10 +20,15 @@ Throughout this repository, a region is labeled by the name of its principal cit
 ## Contents
 
 - `ssa_mortality_tutorial.ipynb`— tutorial illustrating SSA-based mortality
-  preprocessing/gap filling.
+  preprocessing/gap filling, and excess-mortality detection via a
+  quasi-Poisson z-score threshold.
 - `mortality_modelling/ssa_fill_na.py` — utilities expanding the SSALib package
   to
   handle outlier or missing value interpolation in mortality time series.
+- `mortality_modelling/quasi_poisson.py` — quasi-Poisson dispersion model
+  (Farrington et al., 1996; Be-MOMO; EuroMOMO-style) used to standardize
+  mortality residuals into z-scores/thresholds that scale with the local
+  baseline level instead of a constant offset.
 - `data/input/df_mortality_TOTAL.csv` — contains mortality time series used in
   the manuscript and in the notebook tutorial.
   Source: [Eurostat](https://doi.org/10.2908/DEMO_R_MWEEK3).
