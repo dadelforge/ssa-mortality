@@ -11,6 +11,12 @@ This repository contains notebooks, scripts, and data snapshots used to explore
 and document Extreme Mortality Events (EME) and their relationship with Extreme
 Temperature Events (ETE) for Belgium and Greece.
 
+The study units are six NUTS‑3 metropolitan regions: Brussels, Antwerp and
+Liège in Belgium, Athens, Thessaloniki and Larisa in Greece. Each covers the
+wider metropolitan area rather than the municipality alone, and therefore
+includes suburban and, in places, rural population. Throughout this repository a
+region is labelled by the name of its principal city.
+
 ## Contents
 
 - `ssa_mortality_tutorial.ipynb`— tutorial illustrating SSA-based mortality
@@ -24,9 +30,9 @@ Temperature Events (ETE) for Belgium and Greece.
 - `data/output/eme_catalog.xlsx` — catalog of Extreme Mortality Events (EMEs)
   and their associated Extreme Temperature Events (ETEs), following various
   percentile-based definitions.
-- `supplementary_figures/` — per-city figures supporting the manuscript and its
+- `supplementary_figures/` — per-region figures supporting the manuscript and its
   Supplementary Digital Content:
-    - `ssa_examples/` — four panels per city illustrating how the baseline is
+    - `ssa_examples/` — four panels per region illustrating how the baseline is
       obtained: the singular spectrum against its Monte-Carlo confidence band,
       the components retained, the reconstructed baseline over the observed
       series, and the residual. Deliberately simple (no COVID masking, no gap
@@ -36,7 +42,7 @@ Temperature Events (ETE) for Belgium and Greece.
       age group (total, 80+), window length (130, 261 weeks) and maximum AR
       order of the surrogate ensemble (0, 1).
     - `ssa_rate_baselines/` — the same grid fitted on weekly death **rates**,
-      the arm the manuscript results are based on.
+      which is what the manuscript results are based on.
 
   Filenames encode the parameters as `{age group}_w{window}_ar{maximum AR
   order}_f{maximum component frequency}_ns{number of surrogates}`.
@@ -53,9 +59,9 @@ Digital Content for more details on the methodology.
 
 | Column     | Type     | Description                                                        |
 |------------|----------|--------------------------------------------------------------------|
-| city       | str      | City name (Brussels, Antwerp, Liège, Athens, Larisa, Thessaloniki) |
-| country    | str      | Country inferred from city (Belgium or Greece)                     |
-| nuts3_code | str      | NUTS‑3 code of the city/region                                     |
+| city       | str      | Metropolitan region, named after its principal city (Brussels, Antwerp, Liège, Athens, Larisa, Thessaloniki) |
+| country    | str      | Country of the region (Belgium or Greece)                          |
+| nuts3_code | str      | NUTS‑3 code of the metropolitan region                              |
 | start_date | datetime | EME start date (UTC ISO‑8601 in source; Excel datetime in file)    |
 | end_date   | datetime | EME end date (UTC ISO‑8601 in source; Excel datetime in file)      |
 | duration   | int      | Event duration in weeks                                            |
@@ -70,7 +76,7 @@ Digital Content for more details on the methodology.
 | z2_limit                       | list[float] | Weekly z=2 threshold values (serialized list)                    |
 | excess_deaths                  | list[float] | Weekly excess deaths above the baseline (serialized list)        |
 | total_excess_deaths            | float       | Sum of weekly excess deaths over the event window                |
-| population_jan1                | int         | Population at January 1st for the corresponding city/year        |
+| population_jan1                | int         | Population at January 1st for the corresponding region/year      |
 | excess_mortality_rate_per_100k | float       | Total excess deaths per 100,000 population                       |
 | z_score_mean                   | float       | Mean z‑score over the event window                               |
 | z_score_max                    | float       | Maximum z‑score during the event                                 |
