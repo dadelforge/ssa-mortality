@@ -24,6 +24,22 @@ Temperature Events (ETE) for Belgium and Greece.
 - `data/output/eme_catalog.xlsx` — catalog of Extreme Mortality Events (EMEs)
   and their associated Extreme Temperature Events (ETEs), following various
   percentile-based definitions.
+- `supplementary_figures/` — per-city figures supporting the manuscript and its
+  Supplementary Digital Content:
+    - `ssa_examples/` — four panels per city illustrating how the baseline is
+      obtained: the singular spectrum against its Monte-Carlo confidence band,
+      the components retained, the reconstructed baseline over the observed
+      series, and the residual. Deliberately simple (no COVID masking, no gap
+      filling) so that the technique is visible rather than the full pipeline.
+    - `ssa_count_baselines/` — Monte-Carlo SSA baselines and quasi-Poisson
+      z-score bands fitted on weekly death **counts**, for every combination of
+      age group (total, 80+), window length (130, 261 weeks) and maximum AR
+      order of the surrogate ensemble (0, 1).
+    - `ssa_rate_baselines/` — the same grid fitted on weekly death **rates**,
+      the arm the manuscript results are based on.
+
+  Filenames encode the parameters as `{age group}_w{window}_ar{maximum AR
+  order}_f{maximum component frequency}_ns{number of surrogates}`.
 
 ## Description of `eme_catalog.xlsx`
 
