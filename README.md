@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > This repository is associated with a manuscript under finalization and under
-> construction and made public for coauthor review. This note will be updated
+> construction, and made public for co-author review. This note will be updated
 > with the preprint link and citation once available.
 
 ## Overview
@@ -12,10 +12,10 @@ and document Extreme Mortality Events (EME) and their relationship with Extreme
 Temperature Events (ETE) for Belgium and Greece.
 
 The study units are six NUTS‑3 metropolitan regions: Brussels, Antwerp and
-Liège in Belgium, Athens, Thessaloniki and Larisa in Greece. Each covers the
-wider metropolitan area rather than the municipality alone, and therefore
-includes suburban and, in places, rural population. Throughout this repository a
-region is labelled by the name of its principal city.
+Liège in Belgium, Athens (4 NUTS-3 units combined), Thessaloniki and Larisa in 
+Greece. Each covers the wider metropolitan area rather than the municipality alone, 
+and therefore includes, to some lesser extent, suburban and rural population. 
+Throughout this repository, a region is labeled by the name of its principal city.
 
 ## Contents
 
