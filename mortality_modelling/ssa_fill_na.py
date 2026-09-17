@@ -144,7 +144,8 @@ def fill_na(
             max_frequency=max_frequency,
             tol=tol,
             max_iter=max_iter,
-            return_as=return_as
+            return_as=return_as,
+            random_seed=random_seed
         )
 
 
