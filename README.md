@@ -37,11 +37,8 @@ Throughout this repository, a region is labeled by the name of its principal cit
   waves and influenza epidemics it coincides with.
 - `supplementary_figures/` — per-region figures supporting the manuscript and its
   Supplementary Digital Content:
-    - `ssa_examples/` — four panels per region illustrating how the baseline is
-      obtained: the singular spectrum against its Monte-Carlo confidence band,
-      the components retained, the reconstructed baseline over the observed
-      series, and the residual. Deliberately simple (no COVID masking, no gap
-      filling) so that the technique is visible rather than the full pipeline.
+    - `ssa_examples/` — examples of SSA baselines obtained without excluding COVID-19, 
+      illustrating how outliers may affect the decomposition and extracted baselines.
     - `ssa_count_baselines/` — Monte-Carlo SSA baselines and quasi-Poisson
       z-score bands fitted on weekly death **counts**, for every combination of
       age group (total, 80+), window length (130, 261 weeks) and maximum AR
