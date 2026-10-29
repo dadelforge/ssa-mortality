@@ -1,9 +1,9 @@
 # SSA-Based Mortality Baselines and Excess Deaths
 
 > [!NOTE]
-> This repository is associated with a manuscript under finalization and under
-> construction, and made public for co-author review. This note will be updated
-> with the preprint link and citation once available.
+> This repository is associated with a preprint manuscript (doi: [10.64898/2026.10.02.26363997](https://doi.org/10.64898/2026.10.02.26363997))
+> and made public for peer review. This note will be updated
+> with the paper link and citation once available.
 
 ## Overview
 
